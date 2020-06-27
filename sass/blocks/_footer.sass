@@ -1,0 +1,68 @@
+.footer
+    margin-top: 100px
+    @media screen and ( max-width: 991px )
+        margin-top: 50px
+    background-color: #005BC1
+    & a 
+        text-decoration: none
+        outline: none
+    &-contacts
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 36px 0  25px 0
+        border-bottom: 1px solid #FFFFFF
+        @media screen and ( max-width: 575px )
+            flex-direction: column
+        &__link
+            font-family: 'OpenSans SemiBold'
+            font-size: 14px
+            line-height: 19px
+            color: #fff
+            @media screen and ( max-width: 991px )
+                &:nth-of-type(2)
+                    text-align: center
+                    max-width: 50%
+                    @media screen and ( max-width: 575px )
+                        max-width: 100%
+            @media screen and ( max-width: 575px )
+                margin-bottom: 20px
+                &:last-child
+                    margin-bottom: 0
+            &:hover
+                color: #fff
+            &:first-child
+                font-family: 'Oswald Reg'
+                font-size: 18px
+                line-height: 27px
+    &-links
+        width: 50%
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        padding: 15px 0
+        @media screen and ( max-width: 1199px )
+            width: 60%
+        @media screen and ( max-width: 991px )
+            width: 80%
+        @media screen and ( max-width: 575px )
+            width: 100%
+            text-align: center
+    &__link
+        display: block
+        width: 33%
+        font-family: 'OpenSans Light'
+        font-size: 14px
+        line-height: 19px
+        color: #fff
+        margin-bottom: 10px
+        &:hover
+            color: #fff
+    &__copyright
+        padding: 25px 0
+        font-family: 'OpenSans Light'
+        font-size: 14px
+        line-height: 19px
+        color: #fff
+        text-align: center
+        border-top: 1px solid #FFFFFF

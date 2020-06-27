@@ -1,0 +1,79 @@
+.main
+    background-image: url(../img/main/bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    width: 100%
+    min-height: 100vh
+    display: flex
+    align-items: center
+    position: relative
+    z-index: 2
+    &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 22%
+        background-color: rgba(0, 91, 193, 0.6)
+        opacity: 0.3
+        height: calc( 100% - 80px )
+        width: 25%
+        z-index: -1
+        @media screen and ( max-width: 1200px )
+            left: 15%
+            width: 35%
+        @media screen and ( max-width: 991px )
+            left: 5%
+            width: 40%
+        @media screen and ( max-width: 767px )
+            display: none
+    &__body
+        display: flex
+        justify-content: center
+    &__content
+        @media screen and ( max-width: 767px )
+            display: flex
+            flex-direction: column
+            align-items: center
+    & a 
+        text-decoration: none
+        outline: none
+    &__title
+        font-family: 'Oswald Reg'
+        font-size: 48px
+        line-height: 71px
+        letter-spacing: 0.01em
+        color: #fff
+        margin-bottom: 40px
+        max-width: 600px
+        @media screen and ( max-width: 767px )
+            text-align: center
+        @media screen and ( max-width: 575px )
+            font-size: 36px
+            line-height: 55px
+    &__text
+        font-family: 'OpenSans Reg'
+        font-size: 16px
+        line-height: 22px
+        color: #fff
+        margin-bottom: 40px
+        max-width: 410px
+        @media screen and ( max-width: 767px )
+            text-align: center
+    &__button
+        display: inline-block
+        padding: 15px 40px
+        background-color: transparent
+        border: 2px solid #FFFFFF
+        font-family: 'OpenSans SemiBold'
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        letter-spacing: 0.05em
+        color: #fff
+        transition: 0.3s
+        &:hover
+            color: #fff
+        @media screen and ( min-width: 767px )
+            &:hover
+                color: rgb(0, 91, 193)
+                background-color: #fff

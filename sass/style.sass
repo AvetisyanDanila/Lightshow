@@ -1,0 +1,66 @@
+@import 'fonts.sass'
+@import 'blocks/_header.sass'
+@import 'blocks/_main.sass'
+@import 'blocks/_projects.sass'
+@import 'blocks/_catalog.sass'
+@import 'blocks/_rent.sass'
+@import 'blocks/_news.sass'
+@import 'blocks/_footer.sass'
+
+.body.lock
+    overflow: hidden
+.title
+    display: flex
+    align-items: center
+    .lines
+        margin-right: 40px
+        display: flex
+        flex-direction: column
+        @media screen and ( max-width: 575px )
+            margin-right: 20px
+        .line
+            height: 3px
+            background-color: #005BC1
+        .fullline
+            width: 100px
+            @media screen and ( max-width: 575px )
+                width: 60px
+            margin-bottom: 13px
+        .halfline
+            width: 50px
+            @media screen and ( max-width: 575px )
+                width: 30px
+            align-self: flex-end
+    & h1
+        font-family: 'Oswald Reg'
+        font-size: 30px
+        line-height: 44px
+        letter-spacing: 0.05em
+        text-transform: uppercase
+        color: #343434
+        @media screen and ( max-width: 575px )
+            font-size: 25px
+            line-height: 35px
+.arrows
+    display: flex
+.arrow
+    background-color: transparent
+    border: 2px solid #005BC1
+    padding: 20px 23px 18px 22px
+    &_prev
+        & img
+            transition: 0.3s
+        &:hover
+            & img 
+                transform: translateX(-2px)
+    &_next
+        & img
+            transition: 0.3s
+        &:hover
+            & img 
+                transform: translateX(2px)
+                
+    &:focus
+        outline: none
+    &:last-child
+        border-left: none
